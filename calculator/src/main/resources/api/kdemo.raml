@@ -1,0 +1,74 @@
+#%RAML 1.0
+title: kdemo
+version: v1
+description: this is an calculated api
+protocols: [http,https]
+mediaType:  application/json
+traits:
+  query: !include /traits/trait.raml
+/addition:
+  get:
+    is: [query]
+    responses:
+          200:
+            body:         
+                example: !include /examples/response/addition-response.json       
+/subtraction:
+  delete:
+    is: [query]
+    responses:
+      200:
+        body:        
+            example: !include /examples/response/subraction-response.json   
+/division:
+  post:
+    is: [query ] 
+    responses:
+      200:
+        body:    
+            example: !include /examples/response/division-response.json
+/multiplication:
+  put:
+    is: [query]
+    responses:
+      200:
+        body:
+            example: !include /examples/response/multiplication-response.json
+              
+      
+              
+            
+      
+
+          
+                        
+          
+                    
+          
+        
+                                                      
+          
+                    
+          
+        
+
+    
+                    
+         
+      
+    
+
+            
+            
+            
+                    
+          
+        
+                  
+
+      
+                                                    
+                                 
+                    
+
+      
